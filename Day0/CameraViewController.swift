@@ -10,17 +10,39 @@ import UIKit
 import Foundation
 import AVFoundation
 
+enum PhotoState: Int
+{
+  case Start, Delayed, FirstPhoto, SecondPhoto
+}
+
+
 
 class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate
 {
+  
   let CaptureSession = AVCaptureSession()
   let CapturePhotoOutput = AVCapturePhotoOutput()
-
+//  var IsPopup = false
+  var CurrentPhotoState = PhotoState.Start
   
   @IBAction func TakePhotoButton(_ sender: UIButton)
   {
     let CapturePhotoSetting = AVCapturePhotoSettings(format: [AVVideoCodecKey: "jpeg"])
     CapturePhotoOutput.capturePhoto(with: CapturePhotoSetting, delegate: self)
+  }
+  
+  override func viewWillAppear(_ animated: Bool)
+  {
+    if(CurrentPhotoState == PhotoState.Start)
+    {
+//      IsPopup = true
+      segueToReadyPopup()
+    }
+  }
+  
+  override func viewWillDisappear(_ animated: Bool)
+  {
+      CurrentPhotoState = PhotoState.Start
   }
   
   override func viewDidLoad()
@@ -88,6 +110,7 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate
       case .success(let emotion):
         DispatchQueue.main.async {
           self.segueToResultPopup(emotion: emotion)
+
         }
         print(emotion)
         print(emotion.happyIndex)
@@ -97,12 +120,23 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate
       }
     })
   }
+  func segueToReadyPopup() {
+    let storyboard = UIStoryboard(name: "PicturePopup", bundle: nil)
+    let captureReady = storyboard.instantiateViewController(withIdentifier: "readyPopup") as!PicturePopupViewController
+    captureReady.delegate = self
+    present(captureReady, animated: true, completion: nil)
+  }
   
   func segueToResultPopup(emotion: Emotion) {
     let storyboard = UIStoryboard(name: "PicturePopup", bundle: nil)
     let pictureResult = storyboard.instantiateViewController(withIdentifier: "resultPopup") as!PicturePopupResultViewController
-    
+  
     pictureResult.emotion = emotion
     present(pictureResult, animated: true, completion: nil)
+  }
+}
+extension CameraViewController: PicturePopupViewControllerDelegate {
+  func dismissTapped() {
+    CurrentPhotoState = .Delayed
   }
 }
