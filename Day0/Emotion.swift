@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-enum Emotions {
+enum Emotions: Int {
   case anger, fear, surprise, contempt, disgust, happiness, neutral, sadness
   
   var emoji: String {
