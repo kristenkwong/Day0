@@ -40,7 +40,7 @@
 		36F57DE73EC90CBE1DC45F3C /* Pods_Day0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Day0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		776EC84F1E73915B005671DF /* Day0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		776EC8521E73915B005671DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		776EC8541E73915B005671DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		776EC8541E73915B005671DF /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		776EC8571E73915B005671DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		776EC8591E73915B005671DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		776EC85C1E73915B005671DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -705,6 +705,7 @@
 				776EC8791E73915B005671DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		776EC87A1E73915B005671DF /* Build configuration list for PBXNativeTarget "Day0Tests" */ = {
 			isa = XCConfigurationList;
@@ -713,6 +714,7 @@
 				776EC87C1E73915B005671DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		776EC87D1E73915B005671DF /* Build configuration list for PBXNativeTarget "Day0UITests" */ = {
 			isa = XCConfigurationList;
@@ -721,6 +723,7 @@
 				776EC87F1E73915B005671DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
