@@ -15,7 +15,8 @@ enum PhotoState: Int
   case Start, Delayed, FirstPhotoTaken, SecondPhoto, SecondPhotoTaken
 }
 
-
+var firstEmotion: (emotion: String, value: Double)?
+var secondEmotion: (emotion: String, value: Double)?
 
 class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate
 {
@@ -141,17 +142,25 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate
     let pictureResult = storyboard.instantiateViewController(withIdentifier: "resultPopup") as!PicturePopupResultViewController
   
     pictureResult.emotion = emotion
+    
     pictureResult.delegate = self
     pictureResult.state = CurrentPhotoState
     
     if(CurrentPhotoState == PhotoState.Delayed)
     {
       pictureResult.string = "Now try to think of the saddest thing that happened today. Then take a photo when you're ready!"
+      firstEmotion = emotion.happyIndex
     }
     
     else if(CurrentPhotoState == PhotoState.FirstPhotoTaken)
     {
       pictureResult.string = "Done!"
+      secondEmotion = emotion.happyIndex
+      if firstEmotion.value > secondEmotion.value {
+        HistoryData.shared.saveEmojiHistory(firstEmotion.emotion)
+      } else {
+        HistoryData.shared.saveEmojiHistory(secondEmotion.emotion)
+      }
     }
     
     present(pictureResult, animated: true, completion: nil)
