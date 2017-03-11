@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		45DC2E26989F65F041A5928C /* Pods_Day0Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6377DFCDDA8C170597B15E /* Pods_Day0Tests.framework */; };
+		526703CC1E73DC8A00040525 /* EmotionApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526703CB1E73DC8A00040525 /* EmotionApi.swift */; };
+		526703CE1E73DD5100040525 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526703CD1E73DD5100040525 /* Emotion.swift */; };
+		526703D01E73F43E00040525 /* Graphs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526703CF1E73F43E00040525 /* Graphs.storyboard */; };
+		526703D21E73F44800040525 /* Support.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526703D11E73F44800040525 /* Support.storyboard */; };
+		526703D41E73F45300040525 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526703D31E73F45300040525 /* History.storyboard */; };
 		6A4F8801BAC587300B759899 /* Pods_Day0UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB44608B4AFB745D2E435B59 /* Pods_Day0UITests.framework */; };
 		776EC8531E73915B005671DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776EC8521E73915B005671DF /* AppDelegate.swift */; };
 		776EC8551E73915B005671DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776EC8541E73915B005671DF /* ViewController.swift */; };
@@ -38,6 +43,11 @@
 
 /* Begin PBXFileReference section */
 		36F57DE73EC90CBE1DC45F3C /* Pods_Day0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Day0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		526703CB1E73DC8A00040525 /* EmotionApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionApi.swift; sourceTree = "<group>"; };
+		526703CD1E73DD5100040525 /* Emotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
+		526703CF1E73F43E00040525 /* Graphs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Graphs.storyboard; sourceTree = "<group>"; };
+		526703D11E73F44800040525 /* Support.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Support.storyboard; sourceTree = "<group>"; };
+		526703D31E73F45300040525 /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		776EC84F1E73915B005671DF /* Day0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		776EC8521E73915B005671DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		776EC8541E73915B005671DF /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
@@ -125,8 +135,13 @@
 			isa = PBXGroup;
 			children = (
 				776EC8521E73915B005671DF /* AppDelegate.swift */,
+				526703CB1E73DC8A00040525 /* EmotionApi.swift */,
+				526703CD1E73DD5100040525 /* Emotion.swift */,
 				776EC8541E73915B005671DF /* ViewController.swift */,
 				776EC8561E73915B005671DF /* Main.storyboard */,
+				526703CF1E73F43E00040525 /* Graphs.storyboard */,
+				526703D11E73F44800040525 /* Support.storyboard */,
+				526703D31E73F45300040525 /* History.storyboard */,
 				776EC8591E73915B005671DF /* Assets.xcassets */,
 				776EC85B1E73915B005671DF /* LaunchScreen.storyboard */,
 				776EC85E1E73915B005671DF /* Info.plist */,
@@ -285,8 +300,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				776EC85D1E73915B005671DF /* LaunchScreen.storyboard in Resources */,
+				526703D21E73F44800040525 /* Support.storyboard in Resources */,
+				526703D01E73F43E00040525 /* Graphs.storyboard in Resources */,
 				776EC85A1E73915B005671DF /* Assets.xcassets in Resources */,
 				776EC8581E73915B005671DF /* Main.storyboard in Resources */,
+				526703D41E73F45300040525 /* History.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,8 +467,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526703CC1E73DC8A00040525 /* EmotionApi.swift in Sources */,
 				776EC8551E73915B005671DF /* ViewController.swift in Sources */,
 				776EC8531E73915B005671DF /* AppDelegate.swift in Sources */,
+				526703CE1E73DD5100040525 /* Emotion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
