@@ -9,7 +9,7 @@
 import UIKit
 
 protocol PicturePopupViewControllerDelegate {
-  func dismissTapped()
+  func dismissTapped(state: PhotoState)
 }
 
 class PicturePopupViewController: UIViewController {
@@ -23,6 +23,7 @@ class PicturePopupViewController: UIViewController {
     }
   }
   
+
   var delegate: PicturePopupViewControllerDelegate?
   
   override func viewDidLoad() {
@@ -30,7 +31,6 @@ class PicturePopupViewController: UIViewController {
     // Do any additional setup after loading the view.
     view.backgroundColor = UIColor.clear
     view.isOpaque = false
-
   }
   
   override func didReceiveMemoryWarning() {
@@ -40,7 +40,7 @@ class PicturePopupViewController: UIViewController {
   
   
   @IBAction func dismissTapped(_ sender: UIButton) {
-    delegate?.dismissTapped()
+    delegate?.dismissTapped(state: PhotoState.Delayed)
     self.dismiss(animated: true, completion: nil)
   }
   
