@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 enum EmotionEmoji {
-  case 😡, 😂, 😱, 😳, 😒, 😫, 🦁
+  case 😡, 😂, 😱, 😳, 😒, 😫, 🦁, 🤢
   
   static func build(emotion: String) -> EmotionEmoji {
     return 🦁
