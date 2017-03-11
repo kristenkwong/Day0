@@ -9,11 +9,28 @@
 import Foundation
 import SwiftyJSON
 
-enum EmotionEmoji {
-  case 😡, 😂, 😱, 😳, 😒, 😫, 🦁, 🤢
+enum Emotions {
+  case anger, fear, surprise, contempt, disgust, happiness, neutral, sadness
   
-  static func build(emotion: String) -> EmotionEmoji {
-    return 🦁
+  var emoji: String {
+    switch self {
+    case .anger:
+      return "😡"
+    case .fear:
+      return "😱"
+    case .surprise:
+      return "😳"
+    case .contempt:
+      return "😒"
+    case .disgust:
+      return "🤢"
+    case .happiness:
+      return "😂"
+    case .neutral:
+      return "🦁"
+    case .sadness:
+      return "😫"
+    }
   }
 }
 
