@@ -86,6 +86,9 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate
     EmotionApi.shared.getScore(image: UIImage(data: ImageData!)!,completion: { result in
       switch result {
       case .success(let emotion):
+        DispatchQueue.main.async {
+          self.segueToResultPopup(emotion: emotion)
+        }
         print(emotion)
         print(emotion.happyIndex)
         break
@@ -95,17 +98,11 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate
     })
   }
   
-  
-  
-  
-  /*
-   // MARK: - Navigation
-   
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destinationViewController.
-   // Pass the selected object to the new view controller.
-   }
-   */
-  
+  func segueToResultPopup(emotion: Emotion) {
+    let storyboard = UIStoryboard(name: "PicturePopup", bundle: nil)
+    let pictureResult = storyboard.instantiateViewController(withIdentifier: "resultPopup") as!PicturePopupResultViewController
+    
+    pictureResult.emotion = emotion
+    present(pictureResult, animated: true, completion: nil)
+  }
 }

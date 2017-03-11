@@ -10,6 +10,11 @@
 		45DC2E26989F65F041A5928C /* Pods_Day0Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6377DFCDDA8C170597B15E /* Pods_Day0Tests.framework */; };
 		5201E9C81E746D4600EFE64D /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5201E9C71E746D4600EFE64D /* Camera.storyboard */; };
 		5201E9CA1E74719300EFE64D /* HistoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E9C91E74719300EFE64D /* HistoryData.swift */; };
+		5201E9CC1E747A7A00EFE64D /* PicturePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E9CB1E747A7A00EFE64D /* PicturePopupViewController.swift */; };
+		5201E9CE1E747AAC00EFE64D /* PicturePopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5201E9CD1E747AAC00EFE64D /* PicturePopup.storyboard */; };
+		5201E9D01E7480BC00EFE64D /* TKRadarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E9CF1E7480BC00EFE64D /* TKRadarChart.swift */; };
+		5201E9D21E74816E00EFE64D /* PicturePopupResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E9D11E74816E00EFE64D /* PicturePopupResultViewController.swift */; };
+		5201E9D41E7484E900EFE64D /* RadarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E9D31E7484E900EFE64D /* RadarChartViewController.swift */; };
 		526703CC1E73DC8A00040525 /* EmotionApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526703CB1E73DC8A00040525 /* EmotionApi.swift */; };
 		526703CE1E73DD5100040525 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526703CD1E73DD5100040525 /* Emotion.swift */; };
 		526703D01E73F43E00040525 /* Graphs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526703CF1E73F43E00040525 /* Graphs.storyboard */; };
@@ -50,6 +55,11 @@
 		36F57DE73EC90CBE1DC45F3C /* Pods_Day0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Day0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5201E9C71E746D4600EFE64D /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
 		5201E9C91E74719300EFE64D /* HistoryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryData.swift; sourceTree = "<group>"; };
+		5201E9CB1E747A7A00EFE64D /* PicturePopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicturePopupViewController.swift; sourceTree = "<group>"; };
+		5201E9CD1E747AAC00EFE64D /* PicturePopup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PicturePopup.storyboard; sourceTree = "<group>"; };
+		5201E9CF1E7480BC00EFE64D /* TKRadarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKRadarChart.swift; sourceTree = "<group>"; };
+		5201E9D11E74816E00EFE64D /* PicturePopupResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicturePopupResultViewController.swift; sourceTree = "<group>"; };
+		5201E9D31E7484E900EFE64D /* RadarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarChartViewController.swift; sourceTree = "<group>"; };
 		526703CB1E73DC8A00040525 /* EmotionApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionApi.swift; sourceTree = "<group>"; };
 		526703CD1E73DD5100040525 /* Emotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
 		526703CF1E73F43E00040525 /* Graphs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Graphs.storyboard; sourceTree = "<group>"; };
@@ -142,6 +152,7 @@
 		776EC8511E73915B005671DF /* Day0 */ = {
 			isa = PBXGroup;
 			children = (
+				5201E9CF1E7480BC00EFE64D /* TKRadarChart.swift */,
 				776EC8521E73915B005671DF /* AppDelegate.swift */,
 				526703CB1E73DC8A00040525 /* EmotionApi.swift */,
 				526703CD1E73DD5100040525 /* Emotion.swift */,
@@ -149,6 +160,10 @@
 				776EC8541E73915B005671DF /* ViewController.swift */,
 				776EC8561E73915B005671DF /* Main.storyboard */,
 				5201E9C71E746D4600EFE64D /* Camera.storyboard */,
+				5201E9CB1E747A7A00EFE64D /* PicturePopupViewController.swift */,
+				5201E9D11E74816E00EFE64D /* PicturePopupResultViewController.swift */,
+				5201E9CD1E747AAC00EFE64D /* PicturePopup.storyboard */,
+				5201E9D31E7484E900EFE64D /* RadarChartViewController.swift */,
 				636D5E7B1E74726E001D9FE3 /* CameraViewController.swift */,
 				526703CF1E73F43E00040525 /* Graphs.storyboard */,
 				526703D11E73F44800040525 /* Support.storyboard */,
@@ -268,7 +283,7 @@
 				TargetAttributes = {
 					776EC84E1E73915B005671DF = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = JJZEHE8HZ5;
+						DevelopmentTeam = AX2D84BZ47;
 						ProvisioningStyle = Automatic;
 					};
 					776EC8621E73915B005671DF = {
@@ -316,6 +331,7 @@
 				526703D01E73F43E00040525 /* Graphs.storyboard in Resources */,
 				776EC85A1E73915B005671DF /* Assets.xcassets in Resources */,
 				776EC8581E73915B005671DF /* Main.storyboard in Resources */,
+				5201E9CE1E747AAC00EFE64D /* PicturePopup.storyboard in Resources */,
 				526703D41E73F45300040525 /* History.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,9 +498,13 @@
 				526703CC1E73DC8A00040525 /* EmotionApi.swift in Sources */,
 				636D5E7C1E74726E001D9FE3 /* CameraViewController.swift in Sources */,
 				776EC8551E73915B005671DF /* ViewController.swift in Sources */,
+				5201E9D41E7484E900EFE64D /* RadarChartViewController.swift in Sources */,
+				5201E9CC1E747A7A00EFE64D /* PicturePopupViewController.swift in Sources */,
 				776EC8531E73915B005671DF /* AppDelegate.swift in Sources */,
 				5201E9CA1E74719300EFE64D /* HistoryData.swift in Sources */,
+				5201E9D01E7480BC00EFE64D /* TKRadarChart.swift in Sources */,
 				526703CE1E73DD5100040525 /* Emotion.swift in Sources */,
+				5201E9D21E74816E00EFE64D /* PicturePopupResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,7 +657,7 @@
 			baseConfigurationReference = FA9233B76E9054DD58E95A27 /* Pods-Day0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JJZEHE8HZ5;
+				DEVELOPMENT_TEAM = AX2D84BZ47;
 				INFOPLIST_FILE = Day0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zeroMbps.Day0;
@@ -651,7 +671,7 @@
 			baseConfigurationReference = F4136DB7AE4D0FE9F2D1CE51 /* Pods-Day0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JJZEHE8HZ5;
+				DEVELOPMENT_TEAM = AX2D84BZ47;
 				INFOPLIST_FILE = Day0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zeroMbps.Day0;
