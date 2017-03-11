@@ -15,6 +15,7 @@
 		5201E9D01E7480BC00EFE64D /* TKRadarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E9CF1E7480BC00EFE64D /* TKRadarChart.swift */; };
 		5201E9D21E74816E00EFE64D /* PicturePopupResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E9D11E74816E00EFE64D /* PicturePopupResultViewController.swift */; };
 		5201E9D41E7484E900EFE64D /* RadarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E9D31E7484E900EFE64D /* RadarChartViewController.swift */; };
+		5201E9D61E74AB4800EFE64D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E9D51E74AB4800EFE64D /* HistoryViewController.swift */; };
 		526703CC1E73DC8A00040525 /* EmotionApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526703CB1E73DC8A00040525 /* EmotionApi.swift */; };
 		526703CE1E73DD5100040525 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526703CD1E73DD5100040525 /* Emotion.swift */; };
 		526703D01E73F43E00040525 /* Graphs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526703CF1E73F43E00040525 /* Graphs.storyboard */; };
@@ -60,6 +61,7 @@
 		5201E9CF1E7480BC00EFE64D /* TKRadarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKRadarChart.swift; sourceTree = "<group>"; };
 		5201E9D11E74816E00EFE64D /* PicturePopupResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicturePopupResultViewController.swift; sourceTree = "<group>"; };
 		5201E9D31E7484E900EFE64D /* RadarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarChartViewController.swift; sourceTree = "<group>"; };
+		5201E9D51E74AB4800EFE64D /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		526703CB1E73DC8A00040525 /* EmotionApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionApi.swift; sourceTree = "<group>"; };
 		526703CD1E73DD5100040525 /* Emotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
 		526703CF1E73F43E00040525 /* Graphs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Graphs.storyboard; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				526703CF1E73F43E00040525 /* Graphs.storyboard */,
 				526703D11E73F44800040525 /* Support.storyboard */,
 				526703D31E73F45300040525 /* History.storyboard */,
+				5201E9D51E74AB4800EFE64D /* HistoryViewController.swift */,
 				776EC8591E73915B005671DF /* Assets.xcassets */,
 				776EC85B1E73915B005671DF /* LaunchScreen.storyboard */,
 				776EC85E1E73915B005671DF /* Info.plist */,
@@ -500,6 +503,7 @@
 				776EC8551E73915B005671DF /* ViewController.swift in Sources */,
 				5201E9D41E7484E900EFE64D /* RadarChartViewController.swift in Sources */,
 				5201E9CC1E747A7A00EFE64D /* PicturePopupViewController.swift in Sources */,
+				5201E9D61E74AB4800EFE64D /* HistoryViewController.swift in Sources */,
 				776EC8531E73915B005671DF /* AppDelegate.swift in Sources */,
 				5201E9CA1E74719300EFE64D /* HistoryData.swift in Sources */,
 				5201E9D01E7480BC00EFE64D /* TKRadarChart.swift in Sources */,

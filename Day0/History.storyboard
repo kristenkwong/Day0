@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Item-->
         <scene sceneID="mHK-5U-qVu">
             <objects>
-                <viewController id="73e-Vq-TBz" sceneMemberID="viewController">
+                <viewController id="73e-Vq-TBz" customClass="HistoryViewController" customModule="Day0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M8G-hm-su4"/>
                         <viewControllerLayoutGuide type="bottom" id="mZl-W7-KGA"/>
@@ -20,14 +21,39 @@
                     <view key="view" contentMode="scaleToFill" id="MOU-KE-HyH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHm-Eh-r2B">
+                                <rect key="frame" x="140.5" y="28" width="94" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="🦁😫😒😱😂😡🤢" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2pi-bj-FSm">
+                                <rect key="frame" x="16" y="70" width="343" height="533"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mZl-W7-KGA" firstAttribute="top" secondItem="2pi-bj-FSm" secondAttribute="bottom" constant="15" id="LpC-qU-PLs"/>
+                            <constraint firstItem="xHm-Eh-r2B" firstAttribute="top" secondItem="M8G-hm-su4" secondAttribute="bottom" constant="8" id="RWF-AQ-FJM"/>
+                            <constraint firstItem="2pi-bj-FSm" firstAttribute="leading" secondItem="MOU-KE-HyH" secondAttribute="leadingMargin" id="bUR-UE-SrQ"/>
+                            <constraint firstItem="2pi-bj-FSm" firstAttribute="trailing" secondItem="MOU-KE-HyH" secondAttribute="trailingMargin" id="fkR-Et-8e8"/>
+                            <constraint firstItem="xHm-Eh-r2B" firstAttribute="centerX" secondItem="MOU-KE-HyH" secondAttribute="centerX" id="hTl-Jz-TZ0"/>
+                            <constraint firstItem="2pi-bj-FSm" firstAttribute="top" secondItem="xHm-Eh-r2B" secondAttribute="bottom" constant="8.5" id="qc4-eA-kvx"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="wFB-F0-KcZ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="historyTextView" destination="2pi-bj-FSm" id="FUo-al-y44"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IwZ-1b-Zoj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-105" y="227"/>
+            <point key="canvasLocation" x="-106.40000000000001" y="226.23688155922042"/>
         </scene>
         <!--Storyboard Reference-->
         <scene sceneID="GXl-PE-Sm1">
