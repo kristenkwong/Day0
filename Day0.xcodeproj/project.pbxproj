@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		45DC2E26989F65F041A5928C /* Pods_Day0Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6377DFCDDA8C170597B15E /* Pods_Day0Tests.framework */; };
 		5201E9C81E746D4600EFE64D /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5201E9C71E746D4600EFE64D /* Camera.storyboard */; };
+		5201E9CA1E74719300EFE64D /* HistoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E9C91E74719300EFE64D /* HistoryData.swift */; };
 		526703CC1E73DC8A00040525 /* EmotionApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526703CB1E73DC8A00040525 /* EmotionApi.swift */; };
 		526703CE1E73DD5100040525 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526703CD1E73DD5100040525 /* Emotion.swift */; };
 		526703D01E73F43E00040525 /* Graphs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526703CF1E73F43E00040525 /* Graphs.storyboard */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		36F57DE73EC90CBE1DC45F3C /* Pods_Day0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Day0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5201E9C71E746D4600EFE64D /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		5201E9C91E74719300EFE64D /* HistoryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryData.swift; sourceTree = "<group>"; };
 		526703CB1E73DC8A00040525 /* EmotionApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionApi.swift; sourceTree = "<group>"; };
 		526703CD1E73DD5100040525 /* Emotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
 		526703CF1E73F43E00040525 /* Graphs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Graphs.storyboard; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				776EC8521E73915B005671DF /* AppDelegate.swift */,
 				526703CB1E73DC8A00040525 /* EmotionApi.swift */,
 				526703CD1E73DD5100040525 /* Emotion.swift */,
+				5201E9C91E74719300EFE64D /* HistoryData.swift */,
 				776EC8541E73915B005671DF /* ViewController.swift */,
 				776EC8561E73915B005671DF /* Main.storyboard */,
 				5201E9C71E746D4600EFE64D /* Camera.storyboard */,
@@ -480,6 +483,7 @@
 				636D5E7C1E74726E001D9FE3 /* CameraViewController.swift in Sources */,
 				776EC8551E73915B005671DF /* ViewController.swift in Sources */,
 				776EC8531E73915B005671DF /* AppDelegate.swift in Sources */,
+				5201E9CA1E74719300EFE64D /* HistoryData.swift in Sources */,
 				526703CE1E73DD5100040525 /* Emotion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
