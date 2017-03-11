@@ -16,15 +16,18 @@ class RadarChartViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    let w = 150
-    let chart = TKRadarChart(frame: CGRect(x: 0, y: 0, width: w, height: w))
+    
+    let w = 220
+    let h = 170
+    
+    let chart = TKRadarChart(frame: CGRect(x: 0, y: 0, width: w, height: h))
     chart.configuration.radius = 50
     chart.configuration.maxValue = 1
     chart.dataSource = self
     chart.delegate = self
     chart.reloadData()
     chart.center = CGPoint(x: view.bounds.midX, y: view.bounds.midY)
-    chart
+    chart.frame = CGRect(x: 0, y: 0, width: w, height: h)
     view.addSubview(chart)
   }
 }
@@ -64,25 +67,26 @@ extension RadarChartViewController: TKRadarChartDelegate, TKRadarChartDataSource
   
   func valueOfSectionForRadarChart(withRow row: Int, section: Int) -> CGFloat {
     guard let emotionRow = Emotions(rawValue: row) else { fatalError() }
+    
+    let constant = 0.2;
+    
     switch emotionRow {
     case .anger:
-      return CGFloat(emotion!.anger)
+      return CGFloat(min(1, emotion!.anger + constant))
     case .contempt:
-      return CGFloat(emotion!.contempt)
-      print(CGFloat(emotion!.contempt))
+      return CGFloat(min(1, emotion!.contempt + constant))
     case .disgust:
-      return CGFloat(emotion!.disgust)
+      return CGFloat(min(1, emotion!.disgust + constant))
     case .fear:
-      return CGFloat(emotion!.fear)
+      return CGFloat(min(1, emotion!.fear + constant))
     case .happiness:
-      return CGFloat(emotion!.happiness)
+      return CGFloat(min(1, emotion!.happiness + constant))
     case .neutral:
-      return CGFloat(emotion!.neutral)
-      print(CGFloat(emotion!.neutral))
+      return CGFloat(min(1, emotion!.neutral + constant))
     case .sadness:
-      return CGFloat(emotion!.sadness)
+      return CGFloat(min(1, emotion!.sadness + constant))
     case .surprise:
-      return CGFloat(emotion!.surprise)
+      return CGFloat(min(1, emotion!.surprise + constant))
     }
   }
   
