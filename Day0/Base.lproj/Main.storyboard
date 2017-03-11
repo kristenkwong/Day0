@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="260" y="600"/>
         </scene>
-        <!--Graphs-->
+        <!--Support-->
         <scene sceneID="Jte-kF-LEu">
             <objects>
-                <viewControllerPlaceholder storyboardName="Graphs" id="Eel-DJ-cPP" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Support" id="Eel-DJ-cPP" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="fwu-08-lgQ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rcc-1Y-9ZO" userLabel="First Responder" sceneMemberID="firstResponder"/>

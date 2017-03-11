@@ -10,6 +10,11 @@ import UIKit
 
 class SupportViewController: UIViewController {
 
+  @IBAction func DismissViewController(_ sender: UIButton) {
+    
+    self.dismiss(animated: true, completion: nil)
+  
+  }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -50,7 +55,7 @@ class SupportViewController: UIViewController {
         } else{
             UIApplication.shared.openURL(url)
         }
-        
+    
     }
     
     @IBAction func anxietyBC(_ sender: Any) {

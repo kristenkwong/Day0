@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Support-->
         <scene sceneID="RqQ-2M-TNe">
             <objects>
                 <viewController id="wso-s9-q4l" sceneMemberID="viewController">
@@ -42,21 +42,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaY-Ph-3DW">
-                                <rect key="frame" x="167" y="543" width="57" height="30"/>
-                                <state key="normal" title="Go back"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="hWl-1p-aYX" secondAttribute="trailing" constant="65" id="MrM-sf-Dx7"/>
-                            <constraint firstItem="oaY-Ph-3DW" firstAttribute="centerX" secondItem="G9V-EE-cSp" secondAttribute="centerX" constant="8" id="ZkZ-9w-nNz"/>
                             <constraint firstItem="hWl-1p-aYX" firstAttribute="top" secondItem="FAL-vs-uCN" secondAttribute="bottom" constant="197" id="f3Y-Bz-Slm"/>
-                            <constraint firstItem="r4K-TJ-yss" firstAttribute="top" secondItem="oaY-Ph-3DW" secondAttribute="bottom" constant="45" id="qhc-nc-WGi"/>
                             <constraint firstItem="hWl-1p-aYX" firstAttribute="leading" secondItem="G9V-EE-cSp" secondAttribute="leadingMargin" constant="64" id="r6r-Pm-a0z"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="SLq-3J-6x8"/>
+                    <tabBarItem key="tabBarItem" title="Support" id="SLq-3J-6x8"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rl1-S6-hQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -71,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="511" y="-215"/>
         </scene>
-        <!--View Controller-->
+        <!--Support-->
         <scene sceneID="k63-a8-YP6">
             <objects>
-                <viewController id="Brl-Ju-R6p" sceneMemberID="viewController">
+                <viewController id="Brl-Ju-R6p" customClass="SupportViewController" customModule="Day0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DQi-7s-KIc"/>
                         <viewControllerLayoutGuide type="bottom" id="vPe-xh-1tW"/>
@@ -97,13 +91,6 @@
                                 <state key="normal" title="😔"/>
                                 <connections>
                                     <segue destination="Nwb-wU-wl3" kind="show" id="Iof-rQ-8Sm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gkd-ab-O8D">
-                                <rect key="frame" x="159" y="588" width="57" height="30"/>
-                                <state key="normal" title="Go back"/>
-                                <connections>
-                                    <segue destination="wso-s9-q4l" kind="show" id="Fe1-k7-Bg9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMj-Dr-Cz3">
@@ -131,20 +118,30 @@
                                     <segue destination="MPn-bG-a9F" kind="show" id="Yf9-wF-kfx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gkd-ab-O8D">
+                                <rect key="frame" x="16" y="20" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="0.16078431372549018" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="DismissViewController:" destination="Brl-Ju-R6p" eventType="touchUpInside" id="KPV-Tg-ks4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vPe-xh-1tW" firstAttribute="top" secondItem="Gkd-ab-O8D" secondAttribute="bottom" constant="125" id="TcC-oC-wEh"/>
-                            <constraint firstItem="Gkd-ab-O8D" firstAttribute="centerX" secondItem="fCh-in-0dX" secondAttribute="centerX" id="g8D-pM-Ml2"/>
-                            <constraint firstItem="vPe-xh-1tW" firstAttribute="top" secondItem="Gkd-ab-O8D" secondAttribute="bottom" constant="49" id="qv2-sz-Xfm"/>
+                            <constraint firstItem="Gkd-ab-O8D" firstAttribute="top" secondItem="DQi-7s-KIc" secondAttribute="bottom" id="cvP-bw-ykm"/>
+                            <constraint firstItem="Gkd-ab-O8D" firstAttribute="leading" secondItem="fCh-in-0dX" secondAttribute="leadingMargin" id="zlb-N1-BQ8"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Support" id="j3K-Lu-ipQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3UD-FP-qwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="800.79999999999995" y="157.87106446776613"/>
         </scene>
-        <!--Support View Controller-->
+        <!--Support-->
         <scene sceneID="LRR-na-5xg">
             <objects>
                 <viewController id="Nwb-wU-wl3" customClass="SupportViewController" customModule="Day0" customModuleProvider="target" sceneMemberID="viewController">
@@ -187,27 +184,30 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJP-88-k4h">
-                                <rect key="frame" x="158" y="588" width="57" height="30"/>
-                                <state key="normal" title="Go back"/>
+                                <rect key="frame" x="16" y="20" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="0.16078431369999999" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="Brl-Ju-R6p" kind="show" id="MIP-9K-IHn"/>
+                                    <action selector="DismissViewController:" destination="Nwb-wU-wl3" eventType="touchUpInside" id="vX2-En-8Ye"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZI9-0W-0zu" firstAttribute="top" secondItem="hJP-88-k4h" secondAttribute="bottom" constant="112" id="8J7-H8-Ra3"/>
-                            <constraint firstItem="hJP-88-k4h" firstAttribute="centerX" secondItem="CE2-zJ-ZBF" secondAttribute="centerX" constant="-1" id="C5l-ME-8av"/>
-                            <constraint firstItem="ZI9-0W-0zu" firstAttribute="top" secondItem="hJP-88-k4h" secondAttribute="bottom" constant="112" id="TQi-46-wuw"/>
-                            <constraint firstItem="ZI9-0W-0zu" firstAttribute="top" secondItem="hJP-88-k4h" secondAttribute="bottom" constant="49" id="hR7-hh-WRu"/>
+                            <constraint firstItem="hJP-88-k4h" firstAttribute="leading" secondItem="CE2-zJ-ZBF" secondAttribute="leadingMargin" id="I14-5H-cxx"/>
+                            <constraint firstItem="hJP-88-k4h" firstAttribute="top" secondItem="1uz-h1-7oo" secondAttribute="bottom" id="xRd-mX-ssU"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Support" id="hba-5r-ZPT"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JxT-O1-uwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1655" y="-375"/>
         </scene>
-        <!--Support View Controller-->
+        <!--Support-->
         <scene sceneID="8NQ-IL-5RL">
             <objects>
                 <viewController id="MPn-bG-a9F" customClass="SupportViewController" customModule="Day0" customModuleProvider="target" sceneMemberID="viewController">
@@ -272,24 +272,21 @@
                                     <action selector="anxietyBC:" destination="MPn-bG-a9F" eventType="touchUpInside" id="RsU-lv-BVQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpS-65-bEf">
-                                <rect key="frame" x="159" y="588" width="57" height="30"/>
-                                <state key="normal" title="Go back"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpS-65-bEf">
+                                <rect key="frame" x="16" y="20" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="0.16078431369999999" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="Brl-Ju-R6p" kind="show" id="xVi-bk-tuO"/>
+                                    <action selector="DismissViewController:" destination="MPn-bG-a9F" eventType="touchUpInside" id="j7a-Yf-bPE"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="qpS-65-bEf" firstAttribute="centerX" secondItem="MFe-ym-rcC" secondAttribute="centerX" id="2CZ-FI-b7x"/>
-                            <constraint firstItem="r34-hN-wvF" firstAttribute="top" secondItem="qpS-65-bEf" secondAttribute="bottom" constant="125" id="6Rk-sg-Bs0"/>
-                            <constraint firstItem="r34-hN-wvF" firstAttribute="top" secondItem="qpS-65-bEf" secondAttribute="bottom" constant="200" id="Jcn-V0-D2r"/>
-                            <constraint firstItem="r34-hN-wvF" firstAttribute="top" secondItem="qpS-65-bEf" secondAttribute="bottom" constant="49" id="YZr-Yy-KSn"/>
-                            <constraint firstItem="r34-hN-wvF" firstAttribute="top" secondItem="qpS-65-bEf" secondAttribute="bottom" constant="49" id="u0k-Cf-fy3"/>
-                            <constraint firstItem="r34-hN-wvF" firstAttribute="top" secondItem="qpS-65-bEf" secondAttribute="bottom" constant="49" id="uVg-oi-kUK"/>
-                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Support" id="xNB-9O-q0k"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pfe-Sk-fEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -297,8 +294,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xVi-bk-tuO"/>
-        <segue reference="rrY-2m-nmQ"/>
         <segue reference="KHq-ZF-yIA"/>
+        <segue reference="rrY-2m-nmQ"/>
     </inferredMetricsTieBreakers>
 </document>

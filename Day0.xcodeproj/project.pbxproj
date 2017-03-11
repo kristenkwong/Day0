@@ -16,6 +16,7 @@
 		5201E9D21E74816E00EFE64D /* PicturePopupResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E9D11E74816E00EFE64D /* PicturePopupResultViewController.swift */; };
 		5201E9D41E7484E900EFE64D /* RadarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E9D31E7484E900EFE64D /* RadarChartViewController.swift */; };
 		5201E9D61E74AB4800EFE64D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E9D51E74AB4800EFE64D /* HistoryViewController.swift */; };
+		52311B051E74BBBE006E1A52 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52311B041E74BBBE006E1A52 /* SupportViewController.swift */; };
 		526703CC1E73DC8A00040525 /* EmotionApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526703CB1E73DC8A00040525 /* EmotionApi.swift */; };
 		526703CE1E73DD5100040525 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526703CD1E73DD5100040525 /* Emotion.swift */; };
 		526703D01E73F43E00040525 /* Graphs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526703CF1E73F43E00040525 /* Graphs.storyboard */; };
@@ -62,6 +63,7 @@
 		5201E9D11E74816E00EFE64D /* PicturePopupResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicturePopupResultViewController.swift; sourceTree = "<group>"; };
 		5201E9D31E7484E900EFE64D /* RadarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarChartViewController.swift; sourceTree = "<group>"; };
 		5201E9D51E74AB4800EFE64D /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		52311B041E74BBBE006E1A52 /* SupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
 		526703CB1E73DC8A00040525 /* EmotionApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionApi.swift; sourceTree = "<group>"; };
 		526703CD1E73DD5100040525 /* Emotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
 		526703CF1E73F43E00040525 /* Graphs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Graphs.storyboard; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				636D5E7B1E74726E001D9FE3 /* CameraViewController.swift */,
 				526703CF1E73F43E00040525 /* Graphs.storyboard */,
 				526703D11E73F44800040525 /* Support.storyboard */,
+				52311B041E74BBBE006E1A52 /* SupportViewController.swift */,
 				526703D31E73F45300040525 /* History.storyboard */,
 				5201E9D51E74AB4800EFE64D /* HistoryViewController.swift */,
 				776EC8591E73915B005671DF /* Assets.xcassets */,
@@ -286,7 +289,7 @@
 				TargetAttributes = {
 					776EC84E1E73915B005671DF = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = JJZEHE8HZ5;
+						DevelopmentTeam = AX2D84BZ47;
 						ProvisioningStyle = Automatic;
 					};
 					776EC8621E73915B005671DF = {
@@ -500,6 +503,7 @@
 			files = (
 				526703CC1E73DC8A00040525 /* EmotionApi.swift in Sources */,
 				636D5E7C1E74726E001D9FE3 /* CameraViewController.swift in Sources */,
+				52311B051E74BBBE006E1A52 /* SupportViewController.swift in Sources */,
 				776EC8551E73915B005671DF /* ViewController.swift in Sources */,
 				5201E9D41E7484E900EFE64D /* RadarChartViewController.swift in Sources */,
 				5201E9CC1E747A7A00EFE64D /* PicturePopupViewController.swift in Sources */,
@@ -661,7 +665,7 @@
 			baseConfigurationReference = FA9233B76E9054DD58E95A27 /* Pods-Day0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JJZEHE8HZ5;
+				DEVELOPMENT_TEAM = AX2D84BZ47;
 				INFOPLIST_FILE = Day0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zeroMbps.Day0;
@@ -675,7 +679,7 @@
 			baseConfigurationReference = F4136DB7AE4D0FE9F2D1CE51 /* Pods-Day0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JJZEHE8HZ5;
+				DEVELOPMENT_TEAM = AX2D84BZ47;
 				INFOPLIST_FILE = Day0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zeroMbps.Day0;

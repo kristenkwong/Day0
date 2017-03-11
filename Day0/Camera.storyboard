@@ -21,10 +21,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4X-Li-YLQ">
-                                <rect key="frame" x="139" y="538" width="97" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4X-Li-YLQ">
+                                <rect key="frame" x="100" y="523" width="175" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Take a picture"/>
+                                <state key="normal" image="Shutter"/>
                                 <connections>
                                     <action selector="TakePhotoButton:" destination="Hle-uh-AaH" eventType="touchUpInside" id="tiR-QW-Fry"/>
                                 </connections>
@@ -48,4 +48,7 @@
             <point key="canvasLocation" x="611" y="140"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Shutter" width="61" height="61"/>
+    </resources>
 </document>
