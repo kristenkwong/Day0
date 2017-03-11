@@ -12,7 +12,7 @@ import AVFoundation
 
 enum PhotoState: Int
 {
-  case Start, Delayed, FirstPhoto, SecondPhoto
+  case Start, Delayed, FirstPhotoTaken, SecondPhoto, SecondPhotoTaken
 }
 
 
@@ -35,14 +35,23 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate
   {
     if(CurrentPhotoState == PhotoState.Start)
     {
-//      IsPopup = true
       segueToReadyPopup()
+    }
+    
+    if(CurrentPhotoState == PhotoState.SecondPhotoTaken)
+    {
+      CurrentPhotoState = PhotoState.Delayed
+      // Go to a differnet view controller
     }
   }
   
   override func viewWillDisappear(_ animated: Bool)
   {
+    if(CurrentPhotoState == PhotoState.Delayed ||
+       CurrentPhotoState == PhotoState.SecondPhotoTaken)
+    {
       CurrentPhotoState = PhotoState.Start
+    }
   }
   
   override func viewDidLoad()
@@ -132,11 +141,24 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate
     let pictureResult = storyboard.instantiateViewController(withIdentifier: "resultPopup") as!PicturePopupResultViewController
   
     pictureResult.emotion = emotion
+    pictureResult.delegate = self
+    pictureResult.state = CurrentPhotoState
+    
+    if(CurrentPhotoState == PhotoState.Delayed)
+    {
+      pictureResult.string = "Now try to think of the saddest thing that happened today. Then take a photo when you're ready!"
+    }
+    
+    else if(CurrentPhotoState == PhotoState.FirstPhotoTaken)
+    {
+      pictureResult.string = "Done!"
+    }
+    
     present(pictureResult, animated: true, completion: nil)
   }
 }
 extension CameraViewController: PicturePopupViewControllerDelegate {
-  func dismissTapped() {
-    CurrentPhotoState = .Delayed
+  func dismissTapped(state: PhotoState) {
+    CurrentPhotoState = state
   }
 }
