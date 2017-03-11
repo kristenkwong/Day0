@@ -10,21 +10,21 @@ import UIKit
 
 class RadarChartViewController: UIViewController {
   
-  var chart: TKRadarChart!
   
-  var emotion: Emotion? {
-    didSet {
-      chart.reloadData()
-    }
-  }
+  
+  var emotion: Emotion!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    let w = self.view.bounds.width
-    chart = TKRadarChart(frame: CGRect(x: 0, y: 0, width: w, height: w))
-    chart.configuration.radius = w/3
+    let w = 150
+    let chart = TKRadarChart(frame: CGRect(x: 0, y: 0, width: w, height: w))
+    chart.configuration.radius = 50
+    chart.configuration.maxValue = 1
     chart.dataSource = self
     chart.delegate = self
-    chart.center = view.center
+    chart.reloadData()
+    chart.center = CGPoint(x: view.bounds.midX, y: view.bounds.midY)
+    chart
     view.addSubview(chart)
   }
 }
@@ -69,6 +69,7 @@ extension RadarChartViewController: TKRadarChartDelegate, TKRadarChartDataSource
       return CGFloat(emotion!.anger)
     case .contempt:
       return CGFloat(emotion!.contempt)
+      print(CGFloat(emotion!.contempt))
     case .disgust:
       return CGFloat(emotion!.disgust)
     case .fear:
@@ -77,6 +78,7 @@ extension RadarChartViewController: TKRadarChartDelegate, TKRadarChartDataSource
       return CGFloat(emotion!.happiness)
     case .neutral:
       return CGFloat(emotion!.neutral)
+      print(CGFloat(emotion!.neutral))
     case .sadness:
       return CGFloat(emotion!.sadness)
     case .surprise:
@@ -120,5 +122,6 @@ extension RadarChartViewController: TKRadarChartDelegate, TKRadarChartDataSource
     } else {
       return UIColor(red:0,  green:0.788,  blue:0.543, alpha:1)
     }
+  }
 }
 

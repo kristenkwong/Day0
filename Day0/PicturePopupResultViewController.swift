@@ -32,4 +32,9 @@ class PicturePopupResultViewController: UIViewController {
       destination.emotion = emotion
     }
   }
+  
+  @IBAction func dismissTapped(_ sender: UIButton) {
+    self.dismiss(animated: true, completion: nil)
+  }
+  
 }

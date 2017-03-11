@@ -20,6 +20,9 @@
 		526703D01E73F43E00040525 /* Graphs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526703CF1E73F43E00040525 /* Graphs.storyboard */; };
 		526703D21E73F44800040525 /* Support.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526703D11E73F44800040525 /* Support.storyboard */; };
 		526703D41E73F45300040525 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526703D31E73F45300040525 /* History.storyboard */; };
+		636D5E7C1E74726E001D9FE3 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D5E7B1E74726E001D9FE3 /* CameraViewController.swift */; };
+		636D5E7D1E74726E001D9FE3 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D5E7B1E74726E001D9FE3 /* CameraViewController.swift */; };
+		636D5E7E1E74726E001D9FE3 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D5E7B1E74726E001D9FE3 /* CameraViewController.swift */; };
 		6A4F8801BAC587300B759899 /* Pods_Day0UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB44608B4AFB745D2E435B59 /* Pods_Day0UITests.framework */; };
 		776EC8531E73915B005671DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776EC8521E73915B005671DF /* AppDelegate.swift */; };
 		776EC8551E73915B005671DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776EC8541E73915B005671DF /* ViewController.swift */; };
@@ -62,6 +65,7 @@
 		526703CF1E73F43E00040525 /* Graphs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Graphs.storyboard; sourceTree = "<group>"; };
 		526703D11E73F44800040525 /* Support.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Support.storyboard; sourceTree = "<group>"; };
 		526703D31E73F45300040525 /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		636D5E7B1E74726E001D9FE3 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		776EC84F1E73915B005671DF /* Day0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		776EC8521E73915B005671DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		776EC8541E73915B005671DF /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
@@ -160,6 +164,7 @@
 				5201E9D11E74816E00EFE64D /* PicturePopupResultViewController.swift */,
 				5201E9CD1E747AAC00EFE64D /* PicturePopup.storyboard */,
 				5201E9D31E7484E900EFE64D /* RadarChartViewController.swift */,
+				636D5E7B1E74726E001D9FE3 /* CameraViewController.swift */,
 				526703CF1E73F43E00040525 /* Graphs.storyboard */,
 				526703D11E73F44800040525 /* Support.storyboard */,
 				526703D31E73F45300040525 /* History.storyboard */,
@@ -278,7 +283,7 @@
 				TargetAttributes = {
 					776EC84E1E73915B005671DF = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 7V9WT7YFLX;
+						DevelopmentTeam = AX2D84BZ47;
 						ProvisioningStyle = Automatic;
 					};
 					776EC8621E73915B005671DF = {
@@ -491,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				526703CC1E73DC8A00040525 /* EmotionApi.swift in Sources */,
+				636D5E7C1E74726E001D9FE3 /* CameraViewController.swift in Sources */,
 				776EC8551E73915B005671DF /* ViewController.swift in Sources */,
 				5201E9D41E7484E900EFE64D /* RadarChartViewController.swift in Sources */,
 				5201E9CC1E747A7A00EFE64D /* PicturePopupViewController.swift in Sources */,
@@ -507,6 +513,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				776EC8681E73915B005671DF /* Day0Tests.swift in Sources */,
+				636D5E7D1E74726E001D9FE3 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +522,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				776EC8731E73915B005671DF /* Day0UITests.swift in Sources */,
+				636D5E7E1E74726E001D9FE3 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,7 +657,7 @@
 			baseConfigurationReference = FA9233B76E9054DD58E95A27 /* Pods-Day0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7V9WT7YFLX;
+				DEVELOPMENT_TEAM = AX2D84BZ47;
 				INFOPLIST_FILE = Day0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zeroMbps.Day0;
@@ -663,7 +671,7 @@
 			baseConfigurationReference = F4136DB7AE4D0FE9F2D1CE51 /* Pods-Day0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7V9WT7YFLX;
+				DEVELOPMENT_TEAM = AX2D84BZ47;
 				INFOPLIST_FILE = Day0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zeroMbps.Day0;
