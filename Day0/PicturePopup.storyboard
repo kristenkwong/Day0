@@ -12,7 +12,7 @@
         <!--Picture Popup View Controller-->
         <scene sceneID="DZ5-uK-WSv">
             <objects>
-                <viewController id="dA1-ye-TJ1" customClass="PicturePopupViewController" customModule="Day0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="readyPopup" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="dA1-ye-TJ1" customClass="PicturePopupViewController" customModule="Day0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EpO-ok-uOJ"/>
                         <viewControllerLayoutGuide type="bottom" id="dYG-c4-klR"/>
@@ -30,7 +30,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try to think of the saddest thing that happened today. Then take a photo when you're ready!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1c-Ip-yI0">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try to think of the happiest thing that happened today. Then take a photo when you're ready!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1c-Ip-yI0">
                                         <rect key="frame" x="15" y="85" width="290" height="76"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="76" id="cbd-uV-M9R"/>
@@ -62,7 +62,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.6522902397260274" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.4536766834" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="P6V-hD-B68" firstAttribute="centerX" secondItem="m69-pM-mz0" secondAttribute="centerX" id="YnA-6u-MYh"/>
                             <constraint firstItem="P6V-hD-B68" firstAttribute="centerY" secondItem="m69-pM-mz0" secondAttribute="centerY" id="pYq-3f-oU4"/>
@@ -79,7 +79,7 @@
         <!--Picture Popup Result View Controller-->
         <scene sceneID="2M5-lt-MAK">
             <objects>
-                <viewController storyboardIdentifier="resultPopup" id="qsJ-hm-Vfk" customClass="PicturePopupResultViewController" customModule="Day0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="resultPopup" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="qsJ-hm-Vfk" customClass="PicturePopupResultViewController" customModule="Day0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b3C-Hr-nE9"/>
                         <viewControllerLayoutGuide type="bottom" id="PRx-Go-us1"/>
@@ -141,7 +141,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.6522902397" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.45367668336197181" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ZkK-Md-JGo" firstAttribute="centerY" secondItem="Rja-vg-cBO" secondAttribute="centerY" id="1da-PW-Lca"/>
                             <constraint firstItem="ZkK-Md-JGo" firstAttribute="centerX" secondItem="Rja-vg-cBO" secondAttribute="centerX" id="Q1A-Kf-kpc"/>
