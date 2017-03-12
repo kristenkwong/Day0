@@ -45,7 +45,7 @@
                             <constraint firstItem="2pi-bj-FSm" firstAttribute="top" secondItem="xHm-Eh-r2B" secondAttribute="bottom" constant="8.5" id="qc4-eA-kvx"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="history.png" selectedImage="history.png" id="wFB-F0-KcZ"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="history.png" selectedImage="history" id="wFB-F0-KcZ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="historyTextView" destination="2pi-bj-FSm" id="FUo-al-y44"/>
@@ -65,6 +65,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="history" width="40" height="40"/>
         <image name="history.png" width="40" height="40"/>
     </resources>
 </document>
