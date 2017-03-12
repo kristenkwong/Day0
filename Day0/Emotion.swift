@@ -61,7 +61,7 @@ public struct Emotion {
 extension Emotion {
   var happyIndex: (emotion: String, value: Double) {
     let scores  = [happiness, surprise, anger, fear, contempt, disgust, sadness]
-    let scoreString = ["happiness", "surprise", "anger", "fear", "contempt", "disgust", "sadeness"]
+    let scoreString = ["happiness", "surprise", "anger", "fear", "contempt", "disgust", "sadness"]
     let maxScore = scores.max()
     let maxIndex = Int(scores.index(of: maxScore!)!)
     return (emotion: scoreString[maxIndex], value: maxScore!)

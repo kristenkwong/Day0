@@ -13,10 +13,13 @@ class HistoryViewController: UIViewController {
   @IBOutlet weak var historyTextView: UITextView!
   override func viewDidLoad() {
     super.viewDidLoad()
-    historyTextView.text = HistoryData.shared.getEmojiHistory()
+
 //    HistoryData.shared.saveEmojiHistory(emoji: "😱😡😂😂😡😂😂😡😡🤢😡😱😡😂😂😱😡😂😂")
   }
-  
+
+  override func viewDidAppear(_ animated: Bool) {
+    historyTextView.text = HistoryData.shared.getEmojiHistory()
+  }
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
