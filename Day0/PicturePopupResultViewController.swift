@@ -46,9 +46,6 @@ class PicturePopupResultViewController: UIViewController {
       NewState = PhotoState.FirstPhotoTaken
       break;
     case (PhotoState.FirstPhotoTaken):
-      NewState = PhotoState.SecondPhoto
-      break;
-    case(PhotoState.SecondPhoto):
       NewState = PhotoState.SecondPhotoTaken
       break;
     default:

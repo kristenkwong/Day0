@@ -12,7 +12,7 @@ import AVFoundation
 
 enum PhotoState: Int
 {
-  case Start, Delayed, FirstPhotoTaken, SecondPhoto, SecondPhotoTaken
+  case Start, Delayed, FirstPhotoTaken,  SecondPhotoTaken
 }
 
 var firstEmotion: (emotion: String, value: Double)?
