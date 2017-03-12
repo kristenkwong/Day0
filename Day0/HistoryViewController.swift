@@ -14,6 +14,7 @@ class HistoryViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     historyTextView.text = HistoryData.shared.getEmojiHistory()
+//    HistoryData.shared.saveEmojiHistory(emoji: "😱😡😂😂😡😂😂😡😡🤢😡😱😡😂😂😱😡😂😂")
   }
   
   override func didReceiveMemoryWarning() {

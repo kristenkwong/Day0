@@ -156,10 +156,10 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate
     {
       pictureResult.string = "Done!"
       secondEmotion = emotion.happyIndex
-      if firstEmotion.value > secondEmotion.value {
-        HistoryData.shared.saveEmojiHistory(firstEmotion.emotion)
+      if firstEmotion!.value > secondEmotion!.value {
+        HistoryData.shared.saveEmojiHistory(emoji: firstEmotion!.emotion)
       } else {
-        HistoryData.shared.saveEmojiHistory(secondEmotion.emotion)
+        HistoryData.shared.saveEmojiHistory(emoji: secondEmotion!.emotion)
       }
     }
     

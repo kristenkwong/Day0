@@ -28,7 +28,7 @@
                                 <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="🦁😫😒😱😂😡🤢" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2pi-bj-FSm">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="🦁😫😒😱😂😡🤢" translatesAutoresizingMaskIntoConstraints="NO" id="2pi-bj-FSm">
                                 <rect key="frame" x="16" y="70" width="343" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>

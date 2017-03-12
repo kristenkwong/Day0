@@ -15,18 +15,41 @@ public class HistoryData {
 
 extension HistoryData {
   func getEmojiHistory() -> String {
+//    defaults.set("😱😡😂😂😫🦁😡😂🦁😂😫😫😫😡🦁🦁😡😫🤢😡😱😫😡😂😂😱😡😫😫😂😫😂🦁🦁", forKey: "emojiHistory")
     let emojiHistory = defaults.string(forKey: "emojiHistory")
     return emojiHistory ?? ""
   }
   
   func saveEmojiHistory(emoji: String) {
+    var emojiString = ""
+    switch emoji {
+    case "anger":
+      emojiString =  "😡"
+    case "fear":
+      emojiString =  "😱"
+    case "surprise":
+      emojiString =  "😳"
+    case "contempt":
+      emojiString =  "😒"
+    case "disgust":
+      emojiString =  "🤢"
+    case "happiness":
+      emojiString =  "😂"
+    case "neutral":
+      emojiString =  "🦁"
+    case "sadness":
+      emojiString =  "😫"
+    default:
+      emojiString =  "😫"
+    }
     var emojiHistory = defaults.string(forKey: "emojiHistory")
     if emojiHistory == nil {
-      emojiHistory = emoji
+      emojiHistory = emojiString
     } else {
-      emojiHistory = "\(emojiHistory)\(emoji)"
+      emojiHistory = "\(emojiHistory!)\(emojiString)"
     }
     defaults.set(emojiHistory, forKey: "emojiHistory")
+    defaults.synchronize()
   }
   
   func getHappyIndexes() -> [Double] {
