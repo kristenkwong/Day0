@@ -54,7 +54,7 @@
                             <constraint firstItem="hWl-1p-aYX" firstAttribute="leading" secondItem="G9V-EE-cSp" secondAttribute="leadingMargin" constant="64" id="r6r-Pm-a0z"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Support" id="SLq-3J-6x8"/>
+                    <tabBarItem key="tabBarItem" title="Support" image="support.png" selectedImage="support.png" id="SLq-3J-6x8"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rl1-S6-hQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -299,6 +299,7 @@
     </scenes>
     <resources>
         <image name="Get Help" width="155" height="46"/>
+        <image name="support.png" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="KHq-ZF-yIA"/>
