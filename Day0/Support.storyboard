@@ -22,11 +22,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qln-h4-T3e">
-                                <rect key="frame" x="151" y="337" width="72" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Get help  "/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qln-h4-T3e">
+                                <rect key="frame" x="109.5" y="351" width="155" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="C6n-dn-sKK"/>
+                                    <constraint firstAttribute="height" constant="46" id="VOy-gD-xi8"/>
+                                </constraints>
+                                <state key="normal" image="Get Help"/>
                                 <connections>
                                     <segue destination="Brl-Ju-R6p" kind="show" id="h7h-SN-8hq"/>
                                 </connections>
@@ -46,6 +48,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="hWl-1p-aYX" secondAttribute="trailing" constant="65" id="MrM-sf-Dx7"/>
+                            <constraint firstItem="qln-h4-T3e" firstAttribute="top" secondItem="hWl-1p-aYX" secondAttribute="bottom" constant="-6" id="SaO-PC-fHg"/>
+                            <constraint firstItem="qln-h4-T3e" firstAttribute="centerX" secondItem="hWl-1p-aYX" secondAttribute="centerX" id="dfJ-Lj-pHx"/>
                             <constraint firstItem="hWl-1p-aYX" firstAttribute="top" secondItem="FAL-vs-uCN" secondAttribute="bottom" constant="197" id="f3Y-Bz-Slm"/>
                             <constraint firstItem="hWl-1p-aYX" firstAttribute="leading" secondItem="G9V-EE-cSp" secondAttribute="leadingMargin" constant="64" id="r6r-Pm-a0z"/>
                         </constraints>
@@ -293,6 +297,9 @@
             <point key="canvasLocation" x="1655" y="438"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Get Help" width="155" height="46"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="KHq-ZF-yIA"/>
         <segue reference="rrY-2m-nmQ"/>
