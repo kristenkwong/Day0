@@ -32,7 +32,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Camera" image="camera.png" selectedImage="camera.png" id="iTy-Ai-haV"/>
+                    <tabBarItem key="tabBarItem" title="Camera" image="camera" selectedImage="camera.png" id="iTy-Ai-haV"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vLV-11-14f" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -50,6 +50,7 @@
     </scenes>
     <resources>
         <image name="Shutter" width="61" height="61"/>
+        <image name="camera" width="40" height="40"/>
         <image name="camera.png" width="40" height="40"/>
     </resources>
 </document>
