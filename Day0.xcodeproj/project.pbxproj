@@ -289,7 +289,7 @@
 				TargetAttributes = {
 					776EC84E1E73915B005671DF = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = JJZEHE8HZ5;
+						DevelopmentTeam = 2449AR5G6X;
 						ProvisioningStyle = Automatic;
 					};
 					776EC8621E73915B005671DF = {
@@ -665,7 +665,7 @@
 			baseConfigurationReference = FA9233B76E9054DD58E95A27 /* Pods-Day0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JJZEHE8HZ5;
+				DEVELOPMENT_TEAM = 2449AR5G6X;
 				INFOPLIST_FILE = Day0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zeroMbps.Day0;
@@ -679,7 +679,7 @@
 			baseConfigurationReference = F4136DB7AE4D0FE9F2D1CE51 /* Pods-Day0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JJZEHE8HZ5;
+				DEVELOPMENT_TEAM = 2449AR5G6X;
 				INFOPLIST_FILE = Day0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zeroMbps.Day0;
